@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Archana V | AIML Student & AI Enthusiast</title>
+  <meta name="description"
+    content="Portfolio of Archana V, an AIML student building intelligent systems and deploying scalable solutions." />
+</head>
+
+<body>
+  <nav id="navbar">
+    <div class="container nav-container">
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" class="btn btn-outline" style="padding: 0.5rem">
+        <span id="theme-icon">🌙</span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="container">
+      <div class="hero-content">
+        <h2 class="reveal">Hello, I'm</h2>
+        <h1 class="reveal" style="font-size: 4.5rem; line-height: 1.1; margin: 1rem 0;">
+          <span class="text-gradient">Archana V</span>
+        </h1>
+        <h3 class="reveal" style="font-size: 1.8rem; color: var(--text-secondary); margin-bottom: 0.5rem;">
+          Artificial Intelligence & Machine Learning Student
+        </h3>
+        <p class="reveal" style="font-size: 1.2rem; margin-bottom: 2rem; max-width: 600px;">
+          "Building intelligent systems and deploying scalable solutions."
+        </p>
+        <div class="typing-container reveal">
+          <span id="typing-text"></span><span class="cursor">|</span>
+        </div>
+        <div class="hero-btns reveal" style="display: flex; gap: 1rem; margin-top: 2rem;">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#" class="btn btn-outline">Download Resume</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container reveal">
+      <h2 class="section-title">About Me</h2>
+      <div class="glass" style="padding: 3rem; margin-top: 2rem;">
+        <p style="font-size: 1.2rem; margin-bottom: 1.5rem;">
+          I am a passionate AIML student dedicated to exploring the frontiers of Artificial Intelligence, automation,
+          and cloud computing. My journey is driven by a desire to solve real-world problems using impactful tech
+          solutions.
+        </p>
+        <p style="font-size: 1.2rem;">
+          With a strong foundation in Python and machine learning, I am currently expanding my expertise in Cloud &
+          DevOps to build and deploy scalable, intelligent systems that make a difference.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container reveal">
+      <h2 class="section-title">Technical Expertise</h2>
+      <div class="skills-grid"
+        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+        <div class="glass" style="padding: 2rem;">
+          <h3 style="margin-bottom: 1.5rem; color: var(--accent-blue);">Programming</h3>
+          <ul style="list-style: none;">
+            <li>Python</li>
+            <li>C Programming</li>
+            <li>HTML / CSS</li>
+          </ul>
+        </div>
+        <div class="glass" style="padding: 2rem;">
+          <h3 style="margin-bottom: 1.5rem; color: var(--accent-purple);">AI / ML</h3>
+          <ul style="list-style: none;">
+            <li>Machine Learning</li>
+            <li>NumPy / Pandas</li>
+            <li>Data Analysis</li>
+            <li>Deep Learning Basics</li>
+          </ul>
+        </div>
+        <div class="glass" style="padding: 2rem;">
+          <h3 style="margin-bottom: 1.5rem; color: var(--accent-blue);">Cloud & DevOps</h3>
+          <ul style="list-style: none;">
+            <li>AWS (EC2, S3)</li>
+            <li>Git & GitHub</li>
+            <li>CI/CD Basics</li>
+            <li>Linux Fundamentals</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container reveal">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid"
+        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
+        <!-- Project 1 -->
+        <div class="glass project-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+          <h3 class="text-gradient">Women's Healthcare AI-Enabled Platform</h3>
+          <p>A web application designed to support women's health with authentication, cycle tracking, and intelligent
+            chatbot assistance.</p>
+          <div style="font-size: 0.9rem; color: var(--accent-blue);">Django | HTML | CSS</div>
+          <div style="margin-top: auto; font-style: italic; color: var(--text-secondary);">Future Scope: AI-based
+            prediction system.</div>
+        </div>
+        <!-- Project 2 -->
+        <div class="glass project-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+          <h3 class="text-gradient">AWS Cloud Deployment Practice</h3>
+          <p>Hands-on experience launching and configuring EC2 instances, security groups, and SSH connections.</p>
+          <div style="font-size: 0.9rem; color: var(--accent-blue);">AWS | Cloud Infrastructure | Server Config</div>
+        </div>
+        <!-- Project 3 -->
+        <div class="glass project-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+          <h3 class="text-gradient">C Programming Logic Suite</h3>
+          <p>Collection of problem-solving programs including ATM simulation, GPA system, EMI calculator, and file
+            handling.</p>
+          <div style="font-size: 0.9rem; color: var(--accent-blue);">C Programming | Problem Solving</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GitHub Stats -->
+    <section id="github" class="container reveal">
+      <h2 class="section-title">Code Contributions</h2>
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 2rem;">
+        <img
+          src="https://github-readme-stats.vercel.app/api?username=archana-v&show_icons=true&theme=tokyonight&hide_border=true"
+          alt="GitHub Stats" style="max-width: 100%; border-radius: 12px;" />
+        <img
+          src="https://github-readme-stats.vercel.app/api/top-langs/?username=archana-v&layout=compact&theme=tokyonight&hide_border=true"
+          alt="Top Languages" style="max-width: 100%; border-radius: 12px;" />
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container reveal">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="glass" style="padding: 3rem; max-width: 800px; margin: 0 auto;">
+        <form id="contact-form" style="display: flex; flex-direction: column; gap: 1.5rem;">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <input type="text" placeholder="Name" required class="glass"
+              style="padding: 1rem; border-color: var(--glass-border); color: white;" />
+            <input type="email" placeholder="Email" required class="glass"
+              style="padding: 1rem; border-color: var(--glass-border); color: white;" />
+          </div>
+          <textarea placeholder="Message" rows="5" required class="glass"
+            style="padding: 1rem; border-color: var(--glass-border); color: white;"></textarea>
+          <button type="submit" class="btn btn-primary" style="align-self: flex-start;">Send Message</button>
+        </form>
+        <div style="margin-top: 3rem; display: flex; justify-content: center; gap: 2rem; font-size: 1.5rem;">
+          <a href="#" class="text-gradient">LinkedIn</a>
+          <a href="#" class="text-gradient">GitHub</a>
+          <a href="#" class="text-gradient">Email</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer style="padding: 3rem 0; text-align: center; border-top: 1px solid var(--glass-border);">
+    <p>&copy; 2024 Archana V. All rights reserved.</p>
+  </footer>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
