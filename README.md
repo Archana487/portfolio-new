@@ -67,8 +67,9 @@ portfolio-archana/
 **Archana V**
 *AIML Student | AI Enthusiast | Cloud & DevOps Learner*
 
-- GitHub: [@archana-v](https://github.com/Archana487)
-- LinkedIn: [Your Profile]
+- GitHub: [@Archana487](https://github.com/Archana487)
+- LinkedIn: [Archana V](https://www.linkedin.com/in/archana-v-583088352)
+- Email: archanavp2024@gmail.com
 
 ---
 
