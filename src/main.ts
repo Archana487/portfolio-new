@@ -8,6 +8,10 @@ let charIndex = 0;
 let isDeleting = false;
 let typeSpeed = 100;
 
+/**
+ * Handles the character-by-character typing animation in the hero section.
+ * Cycles through the skills array with backspacing effects.
+ */
 function type() {
   if (!typingText) return;
 
@@ -43,6 +47,7 @@ const revealOptions = {
 
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
+    // Add 'active' class when element scrolls into view
     if (entry.isIntersecting) {
       entry.target.classList.add('active');
       revealObserver.unobserve(entry.target);
@@ -79,6 +84,7 @@ const cursor = document.querySelector('#custom-cursor') as HTMLElement;
 const cursorOutline = document.querySelector('#cursor-outline') as HTMLElement;
 const scrollProgress = document.querySelector('#scroll-progress') as HTMLElement;
 
+// Update custom cursor and outline positions based on mouse movement
 window.addEventListener('mousemove', (e) => {
   if (cursor && cursorOutline) {
     cursor.style.left = `${e.clientX}px`;
@@ -97,6 +103,7 @@ document.querySelectorAll('a, button, .glass').forEach(el => {
 });
 
 // --- Scroll Progress Logic ---
+// Calculates and updates the scroll progress bar at the top of the page
 window.addEventListener('scroll', () => {
   const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
   const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
