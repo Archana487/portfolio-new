@@ -1,26 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@300;400;500;700&display=swap');
 
+/* ==========================================================================
+   Design System & Variables
+   ========================================================================== */
+
 :root {
-  /* Premium Color Palette */
+  /* --- Primary Color Palette --- */
   --bg-primary: #050505;
   --bg-secondary: #0a0a0c;
+  --text-primary: #ffffff;
+  --text-secondary: #a1a1aa;
+
+  /* --- Accent Colors --- */
   --accent-blue: #00f2ff;
   --accent-purple: #bc4eff;
   --accent-pink: #ff4edc;
-  --text-primary: #ffffff;
-  --text-secondary: #a1a1aa;
+
+  /* --- UI Elements & Glassmorphism --- */
   --glass-bg: rgba(255, 255, 255, 0.03);
   --glass-border: rgba(255, 255, 255, 0.08);
   --glass-glow: rgba(0, 242, 255, 0.1);
 
+  /* --- Effects --- */
   --neon-blue-shadow: 0 0 20px rgba(0, 242, 255, 0.3);
   --neon-purple-shadow: 0 0 20px rgba(188, 78, 255, 0.3);
 
-  /* Typography */
+  /* --- Typography --- */
   --font-heading: 'Outfit', sans-serif;
   --font-body: 'Space+Grotesk', sans-serif;
 
-  /* Transitions */
+  /* --- Motion --- */
   --transition-smooth: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
@@ -33,6 +42,10 @@
   --glass-border: rgba(0, 0, 0, 0.08);
   --glass-glow: rgba(0, 242, 255, 0.05);
 }
+
+/* ==========================================================================
+   Base Styles & Reset
+   ========================================================================== */
 
 * {
   margin: 0;
@@ -370,7 +383,10 @@ section {
   border-radius: 10px;
 }
 
-/* Navbar - Floating Glass Island */
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+
 nav {
   position: fixed;
   top: 2rem;
