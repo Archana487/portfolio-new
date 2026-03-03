@@ -11,9 +11,18 @@
 </head>
 
 <body>
-  <nav id="navbar">
-    <div class="container nav-container">
+  <div id="scroll-progress"></div>
+  <div id="custom-cursor"></div>
+  <div id="cursor-outline"></div>
+  <div class="aurora-bg">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
 
+  <nav id="navbar" class="glass">
+    <div class="container nav-container">
+      <div class="logo text-gradient">AV</div>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -21,7 +30,7 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <button id="theme-toggle" class="btn btn-outline" style="padding: 0.5rem">
+      <button id="theme-toggle" class="btn btn-outline" style="padding: 0.5rem; border-radius: 50%;">
         <span id="theme-icon">🌙</span>
       </button>
     </div>
@@ -30,24 +39,32 @@
   <main>
     <!-- Hero Section -->
     <section id="home" class="container">
-      <div class="hero-content">
-        <h2 class="reveal">Hello, I'm</h2>
-        <h1 class="reveal" style="font-size: 4.5rem; line-height: 1.1; margin: 1rem 0;">
-          <span class="text-gradient">Archana V</span>
-        </h1>
-        <h3 class="reveal" style="font-size: 1.8rem; color: var(--text-secondary); margin-bottom: 0.5rem;">
-          Artificial Intelligence & Machine Learning Student
-        </h3>
-        <p class="reveal" style="font-size: 1.2rem; margin-bottom: 2rem; max-width: 600px;">
-          "Building intelligent systems and deploying scalable solutions."
-        </p>
-        <div class="typing-container reveal">
-          <span id="typing-text"></span><span class="cursor">|</span>
+      <div class="hero-grid">
+        <div class="hero-content">
+          <h2 class="reveal">Hello, I'm</h2>
+          <h1 class="reveal" style="font-size: 4.5rem; line-height: 1.1; margin: 1rem 0;">
+            <span class="text-gradient">Archana V</span>
+          </h1>
+          <h3 class="reveal" style="font-size: 1.8rem; color: var(--text-secondary); margin-bottom: 0.5rem;">
+            Artificial Intelligence & Machine Learning Student
+          </h3>
+          <p class="reveal" style="font-size: 1.2rem; margin-bottom: 2rem; max-width: 600px;">
+            "Building intelligent systems and deploying scalable solutions."
+          </p>
+          <div class="typing-container reveal">
+            <span id="typing-text"></span><span class="cursor">|</span>
+          </div>
+          <div class="hero-btns reveal" style="display: flex; gap: 1rem; margin-top: 2rem;">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#" class="btn btn-outline">Download Resume</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
         </div>
-        <div class="hero-btns reveal" style="display: flex; gap: 1rem; margin-top: 2rem;">
-          <a href="#projects" class="btn btn-primary">View Projects</a>
-          <a href="#" class="btn btn-outline">Download Resume</a>
-          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        <div class="hero-visual reveal">
+          <div class="visual-container glass">
+            <img src="/ai_hero_graphic.png" alt="AI Visual" class="hero-img" />
+            <div class="visual-glow"></div>
+          </div>
         </div>
       </div>
     </section>
@@ -107,27 +124,39 @@
       <h2 class="section-title">Featured Projects</h2>
       <div class="projects-grid"
         style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
-        <!-- Project 1 -->
+        <!-- Project 1: RepoPremortem AI -->
         <div class="glass project-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
-          <h3 class="text-gradient">Women's Healthcare AI-Enabled Platform</h3>
-          <p>A web application designed to support women's health with authentication, cycle tracking, and intelligent
-            chatbot assistance.</p>
-          <div style="font-size: 0.9rem; color: var(--accent-blue);">Django | HTML | CSS</div>
-          <div style="margin-top: auto; font-style: italic; color: var(--text-secondary);">Future Scope: AI-based
-            prediction system.</div>
+          <h3 class="text-gradient">RepoPremortem AI</h3>
+          <p>An AI-powered pre-mortem tool that analyzes codebases to predict potential software failures using Google
+            Gemini. Features a full-stack FastAPI and Next.js architecture.</p>
+          <div style="font-size: 0.9rem; color: var(--accent-blue);">Gemini AI | FastAPI | Next.js | Tailwind CSS</div>
+          <div style="margin-top: auto; display: flex; gap: 1rem;">
+            <a href="https://github.com/Archana487/repo_premortem" target="_blank" class="text-gradient"
+              style="font-size: 0.9rem;">View Code</a>
+          </div>
         </div>
-        <!-- Project 2 -->
+        <!-- Project 2: Spam Email Detection -->
         <div class="glass project-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
-          <h3 class="text-gradient">AWS Cloud Deployment Practice</h3>
-          <p>Hands-on experience launching and configuring EC2 instances, security groups, and SSH connections.</p>
-          <div style="font-size: 0.9rem; color: var(--accent-blue);">AWS | Cloud Infrastructure | Server Config</div>
+          <h3 class="text-gradient">Spam Email Detection System</h3>
+          <p>An NLP-based classifier that identifies spam emails with high accuracy. Includes an interactive Streamlit
+            dashboard for real-time email testing.</p>
+          <div style="font-size: 0.9rem; color: var(--accent-blue);">Python | Machine Learning | Scikit-Learn |
+            Streamlit</div>
+          <div style="margin-top: auto; display: flex; gap: 1rem;">
+            <a href="https://github.com/Archana487/Spam_Email_Detection" target="_blank" class="text-gradient"
+              style="font-size: 0.9rem;">View Project</a>
+          </div>
         </div>
-        <!-- Project 3 -->
+        <!-- Project 3: Pitch-Forge -->
         <div class="glass project-card" style="padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
-          <h3 class="text-gradient">C Programming Logic Suite</h3>
-          <p>Collection of problem-solving programs including ATM simulation, GPA system, EMI calculator, and file
-            handling.</p>
-          <div style="font-size: 0.9rem; color: var(--accent-blue);">C Programming | Problem Solving</div>
+          <h3 class="text-gradient">Pitch-Forge: AI Pitch Evaluator</h3>
+          <p>An intelligent platform designed to evaluate and refine professional pitches using AI-driven scoring and
+            feedback mechanisms.</p>
+          <div style="font-size: 0.9rem; color: var(--accent-blue);">AI Integration | Node.js | Web Development</div>
+          <div style="margin-top: auto; display: flex; gap: 1rem;">
+            <a href="https://github.com/Archana487/Pitch-Forge" target="_blank" class="text-gradient"
+              style="font-size: 0.9rem;">View Repository</a>
+          </div>
         </div>
       </div>
     </section>
