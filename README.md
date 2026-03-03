@@ -74,3 +74,7 @@ portfolio-archana/
 ---
 
 Built with 💻 and 🚀 by Archana V.
+
+## 📄 License
+
+This project is licensed under the MIT License.
