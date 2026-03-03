@@ -62,6 +62,13 @@ portfolio-archana/
 └── package.json     # Dependencies & scripts
 ```
 
+## 🗺️ Roadmap
+
+- [ ] Add a blog section for tech articles.
+- [ ] Implement a more complex 3D visual using Three.js in the hero section.
+- [ ] Add more projects with detailed case studies.
+- [ ] Integrated CI/CD pipeline for automatic deployment.
+
 ## 👤 Author
 
 **Archana V**
