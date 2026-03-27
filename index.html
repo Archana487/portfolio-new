@@ -183,14 +183,14 @@
     <section id="contact" class="container reveal">
       <h2 class="section-title">Get In Touch</h2>
       <div class="glass" style="padding: 3rem; max-width: 800px; margin: 0 auto;">
-        <form id="contact-form" style="display: flex; flex-direction: column; gap: 1.5rem;">
+        <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID_HERE" method="POST" style="display: flex; flex-direction: column; gap: 1.5rem;">
           <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-            <input type="text" placeholder="Name" required class="glass"
+            <input type="text" name="name" placeholder="Name" aria-label="Name" required class="glass"
               style="padding: 1rem; border-color: var(--glass-border); color: white;" />
-            <input type="email" placeholder="Email" required class="glass"
+            <input type="email" name="email" placeholder="Email" aria-label="Email" required class="glass"
               style="padding: 1rem; border-color: var(--glass-border); color: white;" />
           </div>
-          <textarea placeholder="Message" rows="5" required class="glass"
+          <textarea name="message" placeholder="Message" aria-label="Message" rows="5" required class="glass"
             style="padding: 1rem; border-color: var(--glass-border); color: white;"></textarea>
           <button type="submit" class="btn btn-primary" style="align-self: flex-start;">Send Message</button>
         </form>

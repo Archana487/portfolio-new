@@ -71,11 +71,18 @@ window.addEventListener('scroll', () => {
 // --- Theme Toggle ---
 const themeToggle = document.querySelector('#theme-toggle');
 const themeIcon = document.querySelector('#theme-icon');
-let isDark = true;
+
+// Load saved theme or default to dark
+const savedTheme = localStorage.getItem('theme') || 'dark';
+let isDark = savedTheme === 'dark';
+document.body.setAttribute('data-theme', savedTheme);
+if (themeIcon) themeIcon.textContent = isDark ? '🌙' : '☀️';
 
 themeToggle?.addEventListener('click', () => {
   isDark = !isDark;
-  document.body.setAttribute('data-theme', isDark ? 'dark' : 'light');
+  const newTheme = isDark ? 'dark' : 'light';
+  document.body.setAttribute('data-theme', newTheme);
+  localStorage.setItem('theme', newTheme);
   if (themeIcon) themeIcon.textContent = isDark ? '🌙' : '☀️';
 });
 
@@ -86,7 +93,8 @@ const scrollProgress = document.querySelector('#scroll-progress') as HTMLElement
 
 // Update custom cursor and outline positions based on mouse movement
 window.addEventListener('mousemove', (e) => {
-  if (cursor && cursorOutline) {
+  // Only update cursor on non-touch devices (typically width > 1024px)
+  if (window.innerWidth > 1024 && cursor && cursorOutline) {
     cursor.style.left = `${e.clientX}px`;
     cursor.style.top = `${e.clientY}px`;
 
